@@ -99,7 +99,9 @@ export default class Collection{
 
     subscribe() {
         try{
-            this.ws = new WebSocket(this.webSocketUrl);
+            if(!this.ws){    
+                this.ws = new WebSocket(this.webSocketUrl);
+            }
             const eventHandlers = {
                 create: new Function(),
                 update: new Function(),
