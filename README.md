@@ -1,6 +1,6 @@
-# Pocket REST Wrapper
+# Pocket REST Lib
 
-**Pocket REST Wrapper** is an NPM library designed to simplify API interactions through a structured and consistent way to perform CRUD operations and authentication with minimal effort. It is totally inspired by [PocketBase](https://github.com/pocketbase/pocketbase)'s amazingly simple request mapping. It eliminates the need to manually design and call APIs, letting the developers focus on fast development.
+**Pocket REST Lib** is an NPM library designed to simplify API interactions through a structured and consistent way to perform CRUD operations and authentication with minimal effort. It is totally inspired by [PocketBase](https://github.com/pocketbase/pocketbase)'s amazingly simple request mapping. It eliminates the need to manually design and call APIs, letting the developers focus on fast development.
 
 While doing academic projects, I found it wasting to think on how to map the API requests every time I made some application. PocketBase's simplified mapping and fetching got me really fascinated. So, I thought why not just implement a REST mapping much like this one and integrate with my backend?
 
@@ -10,7 +10,7 @@ While doing academic projects, I found it wasting to think on how to map the API
 
 ## Table of Contents
 
-1. [Pocket REST Wrapper](#pocket-rest-wrapper)
+1. [Pocket REST Lib](#pocket-rest-lib)
 2. [Features](#features)
 3. [Installation](#installation)
 4. [Setup and Usage](#setup-and-usage)
@@ -49,7 +49,7 @@ While doing academic projects, I found it wasting to think on how to map the API
 To install the library, run:
 
 ```bash
-npm install pocket-rest-wrapper
+npm install pocket-rest-lib
 ```
 
 ## Setup and Usage
@@ -61,13 +61,13 @@ Your backend must follow the request mapping structure show in this documentatio
 ### 2. **Import the Library**
 
 ```javascript
-import PocketRestWrapper from 'pocketbase-api-wrapper';
+import PocketRestLib from 'pocket-rest-lib';
 ```
 
 ### 3. **Initialize the Client**
 
 ```javascript
-const client = new PocketRestWrapper('https://your-backend-url.com');
+const client = new PocketRestLib('https://your-backend-url.com');
 ```
 
 ### 4. **Usage**
@@ -234,9 +234,9 @@ Errors are logged to the console. To handle errors programmatically, you can mod
 ## Example Usage
 
 ```javascript
-import PocketRestWrapper from 'pocket-rest-wrapper';
+import PocketRestLib from 'pocket-rest-lib';
 
-const client = new PocketRestWrapper('https://your-backend-url.com');
+const client = new PocketRestLib('https://your-backend-url.com');
 const users = client.collection('users');
 
 (async () => {

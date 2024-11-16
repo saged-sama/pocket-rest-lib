@@ -1,11 +1,11 @@
-import PocketRestWrapper from "../src/index";
+import PocketRestLib from '../src/index';
 
 describe('index', () => {
-  describe('PocketRestWrapper', () => {
+  describe('PocketRestLib', () => {
     it('should return a class containing the baseurl', () => {
       const message = 'Hello';
 
-      const result = new PocketRestWrapper(message);
+      const result = new PocketRestLib(message);
 
       expect(result).toMatch(message);
     });
