@@ -6,9 +6,15 @@
 
 While doing academic projects, I found it wasting to think on how to map the API requests every time I made some application. PocketBase's simplified mapping and fetching got me really fascinated. So, I thought why not just implement a REST mapping much like this one and integrate with my backend?
 
----
-#### Note: There are some dissimilarities with the actual PocketBase's original JS library, such as getting file urls, and realtime features. This is because I kept things simple and parallel with my own projects
----
+
+## Why Use PocketBase API Wrapper?
+
+1. Saves development time by handling common API tasks.
+2. Reduces the need for repetitive code.
+3. No need to integrate additional HTTP or WebSocket libraries.
+4. Lightweight and easy to integrate.
+5. The key difference with PocketBase's original SDK is that this library, for realtime features, uses WebSocket, which is a full duplex communication protocol, instead of Server Sent Events, which only allows one sided communication from the server. Refer: [Realtime](#real-time-subscriptions)
+6. Another difference with the PocketBase's original is constructing the filepath from filename and recordId. Refer to this: [Filepath Generation](#file-management)
 
 ## Table of Contents
 
@@ -459,13 +465,6 @@ Set `skipTotal=true` to speed up queries by skipping total count calculations. T
 
 - Your backend must follow PocketBase's request mapping structure and must implement filtering, expanding, and pagination that aligns with this library [API References](#-api-reference)
 - Use only JWT-based authentication
-
-## Why Use PocketBase API Wrapper?
-
-1. Saves development time by handling common API tasks.
-2. Reduces the need for repetitive code.
-3. No need to integrate additional HTTP or WebSocket libraries.
-4. Lightweight and easy to integrate.
 
 ## Contributions
 
