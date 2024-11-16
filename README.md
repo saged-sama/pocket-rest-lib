@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/pocket-rest-lib.svg)](https://www.npmjs.com/package/pocket-rest-lib)
 # Pocket REST Lib
 
 **Pocket REST Lib** is an NPM library designed to simplify API interactions through a structured and consistent way to perform CRUD operations and authentication with minimal effort. It is totally inspired by [PocketBase](https://github.com/pocketbase/pocketbase)'s amazingly simple request mapping. It eliminates the need to manually design and call APIs, letting the developers focus on fast development.
