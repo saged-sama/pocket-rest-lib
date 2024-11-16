@@ -32,15 +32,23 @@
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
-    "template",
+    "rest",
+    "rest-client",
+    "http",
+    "javascript",
     "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "npm",
+    "crud",
+    "pocketbase",
+    "backend",
+    "api",
+    "restful",
+    "websocket",
+    "realtime",
+    "wrapper",
+    "error-handling",
+    "error",
+    "request-mapping"
   ],
   "bugs": {
     "url": "https://github.com/saged-sama/pocket-rest-lib/issues"
